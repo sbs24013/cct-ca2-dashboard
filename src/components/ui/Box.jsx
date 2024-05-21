@@ -13,6 +13,7 @@ const Box = styled.div`
   flex-basis: fit-content;
   flex-direction: column;
   .plot-title {
+    color: var(--black);
     margin: 1rem 1rem 0;
     font-size: 1rem;
     text-wrap: balance;

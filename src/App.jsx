@@ -5,7 +5,7 @@ import logo from "./assets/park-dashboard-logo.png";
 // Plots
 import { SimplePlot } from "./components/plots/SimplePlot";
 import Box from "./components/ui/Box";
-import { EconomyPlots } from "./components/plots/EconomyPlots";
+import TogglePlots from "./components/plots/TogglePlots";
 // import { LinePlot } from "./components/LinePlot";
 // import AnimatedMapPlot from "./components/AnimatedMapPlot";
 
@@ -24,7 +24,23 @@ function App() {
         {/* <AnimatedMapPlot />
         <SimplePlot />
         <LinePlot /> */}
-        <EconomyPlots />
+        {/* FAO Dataset */}
+        <TogglePlots
+          path="/datasets/ireland_economy.csv"
+          heading="Ireland Economic Statistics"
+          selected_init={[1, 2]}
+        />
+        <TogglePlots
+          path="/datasets/ireland_land_use.csv"
+          heading="Ireland Land Use Statistics"
+          selected_init={[0, 1, 2]}
+        />
+        <TogglePlots
+          path="/datasets/ireland_population.csv"
+          heading="Ireland Population Statistics"
+          selected_init={[1, 3]}
+        />
+
         <Row>
           <Box>Box</Box>
           <Box>Box</Box>
