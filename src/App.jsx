@@ -2,7 +2,11 @@ import "./App.css";
 import styled from "styled-components";
 
 import logo from "./assets/park-dashboard-logo.png";
-import { SimplePlot } from "../components/SimplePlot";
+
+// Plots
+import { SimplePlot } from "./components/SimplePlot";
+import { LinePlot } from "./components/LinePlot";
+import AnimatedMapPlot from "./components/AnimatedMapPlot";
 
 function App() {
   return (
@@ -13,7 +17,9 @@ function App() {
       </Header>
 
       <div className="plots">
+        <AnimatedMapPlot />
         <SimplePlot />
+        <LinePlot />
       </div>
     </Layout>
   );
