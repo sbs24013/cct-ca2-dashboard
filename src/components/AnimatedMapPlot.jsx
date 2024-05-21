@@ -75,6 +75,9 @@ const AnimatedMapPlot = () => {
 
   const layout = {
     title: "World Life Expectency 1952 - 2007",
+    width: 600,
+    height: 400,
+    paper_bgcolor: "transparent",
     geo: {
       scope: "world",
       countrycolor: "rgb(255, 255, 255)",

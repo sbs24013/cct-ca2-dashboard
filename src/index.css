@@ -1,10 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-body,
-#root {
+:root {
+  --dark-green: #004225;
+  --light-green: #f5f5dc;
+  --orange: #ffb000;
+  --salmon: #ffcf9d;
+  --light-gray: #eeeeee;
+  --white: #ffffff;
+  --black: #001009;
+}
+
+body {
   padding: 0;
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
+  /* min-width: 700px; */
+  min-height: 100%;
+  background-color: var(--light-gray);
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    linear-gradient(transparent, transparent, transparent, var(--dark-green));
+  background-position: cover;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
 }
 
 *,

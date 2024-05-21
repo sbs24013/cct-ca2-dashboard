@@ -27,7 +27,14 @@ export function LinePlot() {
   return (
     <Plot
       data={data}
-      layout={{ width: 640, height: 400, title: "Sample Line Plot" }}
+      layout={{
+        title: "Sample Line Plot",
+        width: 600,
+        height: 400,
+        paper_bgcolor: "transparent",
+        plot_bgcolor: "transparent",
+      }}
+      config={{ responsive: true }}
     />
   );
 }

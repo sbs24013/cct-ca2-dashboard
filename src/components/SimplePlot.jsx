@@ -13,7 +13,14 @@ export function SimplePlot() {
         },
         { type: "bar", x: [1, 2, 3], y: [2, 5, 3] },
       ]}
-      layout={{ width: 640, height: 400, title: "A Fancy Plot" }}
+      layout={{
+        title: "A Fancy Plot",
+        width: 600,
+        height: 400,
+        paper_bgcolor: "transparent",
+        plot_bgcolor: "transparent",
+      }}
+      config={{ responsive: true }}
     />
   );
 }
