@@ -1,18 +1,17 @@
 import "./App.css";
 import styled from "styled-components";
-
 import logo from "./assets/park-dashboard-logo.png";
 
 // Plots
 import { SimplePlot } from "./components/SimplePlot";
-import { LinePlot } from "./components/LinePlot";
-import AnimatedMapPlot from "./components/AnimatedMapPlot";
+// import { LinePlot } from "./components/LinePlot";
+// import AnimatedMapPlot from "./components/AnimatedMapPlot";
 
 function App() {
   return (
     <Layout className="layout">
       <Header>
-        <img src={logo} alt="logo" className="logo" width={150} />
+        <img src={logo} alt="logo" className="logo" width={100} />
         <h1>
           Interactive Dashboard <br />
           <em>by</em> Jongsun Park
@@ -20,9 +19,27 @@ function App() {
       </Header>
 
       <PlotContainer className="plot-container">
-        <AnimatedMapPlot />
+        {/* <AnimatedMapPlot />
         <SimplePlot />
-        <LinePlot />
+        <LinePlot /> */}
+        <Row>
+          <SimplePlot />
+          <SimplePlot />
+          <SimplePlot />
+          <SimplePlot />
+        </Row>
+        <Row>
+          <SimplePlot />
+          <SimplePlot />
+        </Row>
+        <Row>
+          <SimplePlot />
+        </Row>
+        <Row>
+          <SimplePlot />
+          <SimplePlot />
+          <SimplePlot />
+        </Row>
       </PlotContainer>
     </Layout>
   );
@@ -40,27 +57,7 @@ const Layout = styled.div`
   margin: 1rem auto;
 `;
 
-const PlotContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
-  .plot-container {
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0px 10px 1rem rgba(0, 0, 0, 0.05);
-    background-color: var(--white);
-    padding: 0.5rem;
-
-    .js-plotly-plot {
-      width: 100%;
-      height: 100%;
-    }
-  }
-`;
+const PlotContainer = styled.div``;
 
 const Header = styled.header`
   display: flex;
@@ -70,6 +67,17 @@ const Header = styled.header`
 
   h1 {
     text-wrap: balance;
+    font-size: 1.2rem;
     color: var(--dark-green);
   }
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 `;

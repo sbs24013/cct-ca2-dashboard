@@ -1,8 +1,8 @@
-import Plot from "react-plotly.js";
+import PlotContainer from "./PlotContainer";
 
 export function SimplePlot() {
   return (
-    <Plot
+    <PlotContainer
       data={[
         {
           x: [1, 2, 3],
@@ -14,11 +14,11 @@ export function SimplePlot() {
         { type: "bar", x: [1, 2, 3], y: [2, 5, 3] },
       ]}
       layout={{
-        title: "A Fancy Plot",
-        width: 600,
-        height: 400,
-        paper_bgcolor: "transparent",
-        plot_bgcolor: "transparent",
+        title: "Placeholder Plot",
+        width: "auto",
+        height: "auto",
+        paper_bgcolor: "",
+        plot_bgcolor: "",
       }}
       config={{ responsive: true }}
     />
