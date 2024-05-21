@@ -2,8 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import Plot from "react-plotly.js";
 
-import Loader from "./Loader";
-import Box from "./Box";
+import Loader from "../ui/Loader";
+import Box from "../ui/Box";
 
 export default function PlotContainer({
   data = [],

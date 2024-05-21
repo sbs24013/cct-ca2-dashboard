@@ -1,0 +1,51 @@
+,Variable,Year,Value,Unit
+65,% of agricultural GVA produced by irrigated agriculture,2016,0.0,%
+66,% of agricultural GVA produced by irrigated agriculture,2017,0.0,%
+67,% of agricultural GVA produced by irrigated agriculture,2018,0.0,%
+68,% of agricultural GVA produced by irrigated agriculture,2019,0.0,%
+69,% of agricultural GVA produced by irrigated agriculture,2020,0.0,%
+205,"Agriculture, value added (% GDP)",2016,0.944965,%
+206,"Agriculture, value added (% GDP)",2017,1.177968,%
+207,"Agriculture, value added (% GDP)",2018,0.891399,%
+208,"Agriculture, value added (% GDP)",2019,0.905,%
+209,"Agriculture, value added (% GDP)",2020,0.931203,%
+345,"Agriculture, value added to GDP",2016,2824386930.0,current US$
+346,"Agriculture, value added to GDP",2017,3962418859.0,current US$
+347,"Agriculture, value added to GDP",2018,3438452979.0,current US$
+348,"Agriculture, value added to GDP",2019,3613859626.0,current US$
+349,"Agriculture, value added to GDP",2020,3965550694.0,current US$
+485,GDP Deflator (2015),2016,100.4630699,0
+486,GDP Deflator (2015),2017,103.7234563,0
+487,GDP Deflator (2015),2018,109.597594,0
+488,GDP Deflator (2015),2019,107.6028426,0
+489,GDP Deflator (2015),2020,108.0683524,0
+625,GDP per capita,2016,63380.307533,current US$/inhab
+626,GDP per capita,2017,70491.993301,current US$/inhab
+627,GDP per capita,2018,79788.214352,current US$/inhab
+628,GDP per capita,2019,81560.488797,current US$/inhab
+629,GDP per capita,2020,86098.268784,current US$/inhab
+765,Gender Inequality Index (GII) [equality = 0; inequality = 1),2016,0.1129,0
+766,Gender Inequality Index (GII) [equality = 0; inequality = 1),2017,0.1129,0
+767,Gender Inequality Index (GII) [equality = 0; inequality = 1),2018,0.1129,0
+768,Gender Inequality Index (GII) [equality = 0; inequality = 1),2019,0.1129,0
+769,Gender Inequality Index (GII) [equality = 0; inequality = 1),2020,0.1129,0
+905,Gross Domestic Product (GDP),2016,298888093700.0,current US$
+906,Gross Domestic Product (GDP),2017,336377500200.0,current US$
+907,Gross Domestic Product (GDP),2018,385736680800.0,current US$
+908,Gross Domestic Product (GDP),2019,399321702800.0,current US$
+909,Gross Domestic Product (GDP),2020,425852283100.0,current US$
+1045,Human Development Index (HDI) [highest = 1],2016,0.936,0
+1046,Human Development Index (HDI) [highest = 1],2017,0.939,0
+1047,Human Development Index (HDI) [highest = 1],2018,0.942,0
+1048,Human Development Index (HDI) [highest = 1],2019,0.942,0
+1049,Human Development Index (HDI) [highest = 1],2020,0.942,0
+1185,"Industry, value added to GDP",2016,105887386497.0,current US$
+1186,"Industry, value added to GDP",2017,116371133074.0,current US$
+1187,"Industry, value added to GDP",2018,136619964831.0,current US$
+1188,"Industry, value added to GDP",2019,136508859421.0,current US$
+1189,"Industry, value added to GDP",2020,154688747525.0,current US$
+1376,"Services, value added to GDP",2016,168814760933.0,current US$
+1377,"Services, value added to GDP",2017,190129025891.0,current US$
+1378,"Services, value added to GDP",2018,221622114518.0,current US$
+1379,"Services, value added to GDP",2019,234429988867.0,current US$
+1380,"Services, value added to GDP",2020,243461909282.0,current US$

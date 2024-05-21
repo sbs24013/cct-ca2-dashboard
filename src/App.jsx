@@ -3,8 +3,8 @@ import styled from "styled-components";
 import logo from "./assets/park-dashboard-logo.png";
 
 // Plots
-import { SimplePlot } from "./components/SimplePlot";
-import Box from "./components/Box";
+import { SimplePlot } from "./components/plots/SimplePlot";
+import Box from "./components/ui/Box";
 // import { LinePlot } from "./components/LinePlot";
 // import AnimatedMapPlot from "./components/AnimatedMapPlot";
 
