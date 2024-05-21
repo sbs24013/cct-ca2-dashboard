@@ -10,6 +10,7 @@ export default function PlotContainer({
   layout = {},
   config = {},
   frames = [],
+  title = "",
 }) {
   const boxRef = useRef(null);
   const [plotW, setPlotW] = useState("100%");
@@ -44,6 +45,7 @@ export default function PlotContainer({
 
   return (
     <Box ref={boxRef} className="plot-box">
+      {title && <h3 className="plot-title">{title}</h3>}
       <Plot
         data={data}
         layout={{ ...layout, width: plotW }}

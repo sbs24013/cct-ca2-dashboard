@@ -5,6 +5,7 @@ import logo from "./assets/park-dashboard-logo.png";
 // Plots
 import { SimplePlot } from "./components/plots/SimplePlot";
 import Box from "./components/ui/Box";
+import { EconomyPlots } from "./components/plots/EconomyPlots";
 // import { LinePlot } from "./components/LinePlot";
 // import AnimatedMapPlot from "./components/AnimatedMapPlot";
 
@@ -23,6 +24,7 @@ function App() {
         {/* <AnimatedMapPlot />
         <SimplePlot />
         <LinePlot /> */}
+        <EconomyPlots />
         <Row>
           <Box>Box</Box>
           <Box>Box</Box>
