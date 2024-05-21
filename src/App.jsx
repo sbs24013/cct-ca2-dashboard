@@ -4,6 +4,7 @@ import logo from "./assets/park-dashboard-logo.png";
 
 // Plots
 import { SimplePlot } from "./components/SimplePlot";
+import Box from "./components/Box";
 // import { LinePlot } from "./components/LinePlot";
 // import AnimatedMapPlot from "./components/AnimatedMapPlot";
 
@@ -23,10 +24,10 @@ function App() {
         <SimplePlot />
         <LinePlot /> */}
         <Row>
-          <SimplePlot />
-          <SimplePlot />
-          <SimplePlot />
-          <SimplePlot />
+          <Box>Box</Box>
+          <Box>Box</Box>
+          <Box>Box</Box>
+          <Box>Box</Box>
         </Row>
         <Row>
           <SimplePlot />

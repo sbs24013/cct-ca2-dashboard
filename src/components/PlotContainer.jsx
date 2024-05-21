@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
 import Plot from "react-plotly.js";
-import styled from "styled-components";
+
 import Loader from "./Loader";
+import Box from "./Box";
 
 export default function PlotContainer({
   data = [],
@@ -52,16 +53,3 @@ export default function PlotContainer({
     </Box>
   );
 }
-
-const Box = styled.div`
-  background: white;
-  overflow: hidden;
-  border-radius: 5px;
-  min-height: 200px;
-  min-width: 200px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex: 1;
-  flex-basis: fit-content;
-`;
