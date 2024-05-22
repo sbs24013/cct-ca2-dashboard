@@ -4,8 +4,18 @@ import styled from "styled-components";
 const ToggleButtons = ({
   plots = [],
   selectedPlots = [],
-  onToggleClick = () => {},
+  setSelectedPlots = () => {},
 }) => {
+  const onToggleClick = (plot_index) => {
+    if (selectedPlots.includes(plot_index)) {
+      setSelectedPlots([
+        ...selectedPlots.filter((index) => index !== plot_index),
+      ]);
+    } else {
+      setSelectedPlots([...selectedPlots, plot_index]);
+    }
+  };
+
   return (
     <ToggleContrainer>
       {plots.map((plot, index) => {
@@ -27,7 +37,7 @@ const ToggleContrainer = styled.div`
   margin-bottom: 10px;
 `;
 
-const Toggle = styled.button`
+export const Toggle = styled.button`
   font-size: small;
   // font-weight: bold;
   border: 1px solid black;

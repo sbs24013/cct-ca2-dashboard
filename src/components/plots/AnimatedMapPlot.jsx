@@ -31,6 +31,9 @@ const AnimatedMapPlot = () => {
           data: [{ z: z, locations: locations, text: locations }],
           name: num,
         };
+
+        console.log(tempFrames[i]);
+
         tempSliderSteps.push({
           label: num.toString(),
           method: "animate",
@@ -60,6 +63,8 @@ const AnimatedMapPlot = () => {
           zmax: 90,
         },
       ];
+
+      console.log("initialData", initialData);
 
       setData(initialData);
       setFrames(tempFrames);
@@ -162,6 +167,9 @@ const AnimatedMapPlot = () => {
     ],
   };
 
+  console.log("final", data);
+  console.log("frames", frames);
+  console.log("sliderSteps", sliderSteps);
   return (
     <Plot
       data={data}

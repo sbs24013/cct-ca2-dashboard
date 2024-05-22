@@ -3,11 +3,11 @@ import styled from "styled-components";
 import logo from "./assets/park-dashboard-logo.png";
 
 // Plots
-import { SimplePlot } from "./components/plots/SimplePlot";
-import Box from "./components/ui/Box";
+// import { SimplePlot } from "./components/plots/SimplePlot";
+// import Box from "./components/ui/Box";
 import TogglePlots from "./components/plots/TogglePlots";
-// import { LinePlot } from "./components/LinePlot";
-// import AnimatedMapPlot from "./components/AnimatedMapPlot";
+import TradePlots from "./components/plots/TradePlots";
+import SAPlots from "./components/plots/SAPlots";
 
 function App() {
   return (
@@ -21,10 +21,8 @@ function App() {
       </Header>
 
       <PlotContainer className="plot-container">
-        {/* <AnimatedMapPlot />
-        <SimplePlot />
-        <LinePlot /> */}
-        {/* FAO Dataset */}
+        <SAPlots />
+        <TradePlots heading="Ireland Imports & Exports Map" />
         <TogglePlots
           path="/datasets/ireland_economy.csv"
           heading="Ireland Economic Statistics"
@@ -40,25 +38,6 @@ function App() {
           heading="Ireland Population Statistics"
           selected_init={[1, 3]}
         />
-
-        <Row>
-          <Box>Box</Box>
-          <Box>Box</Box>
-          <Box>Box</Box>
-          <Box>Box</Box>
-        </Row>
-        <Row>
-          <SimplePlot />
-          <SimplePlot />
-        </Row>
-        <Row>
-          <SimplePlot />
-        </Row>
-        <Row>
-          <SimplePlot />
-          <SimplePlot />
-          <SimplePlot />
-        </Row>
       </PlotContainer>
     </Layout>
   );
@@ -91,7 +70,7 @@ const Header = styled.header`
   }
 `;
 
-const Row = styled.div`
+export const Row = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

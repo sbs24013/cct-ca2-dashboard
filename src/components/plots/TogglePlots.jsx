@@ -6,6 +6,7 @@ import { csv as read_csv } from "d3";
 import styled from "styled-components";
 import ToggleButtons from "../ui/ToggleButtons";
 import modify_data from "../../utils/modify_data";
+import { colors } from "../../utils/colors";
 
 export default function TogglePlots({
   path = "/datasets/ireland_land_use.csv",
@@ -25,16 +26,6 @@ export default function TogglePlots({
     });
   }, [path]);
 
-  const onToggleClick = (plot_index) => {
-    if (selectedPlots.includes(plot_index)) {
-      setSelectedPlots([
-        ...selectedPlots.filter((index) => index !== plot_index),
-      ]);
-    } else {
-      setSelectedPlots([...selectedPlots, plot_index]);
-    }
-  };
-
   let plots = [];
 
   for (let key in data) {
@@ -52,7 +43,8 @@ export default function TogglePlots({
       <ToggleButtons
         plots={plots}
         selectedPlots={selectedPlots}
-        onToggleClick={onToggleClick}
+        setSelectedPlots={setSelectedPlots}
+        // onToggleClick={onToggleClick}
       />
 
       <LandUsePlotContainer className="economy_plots">
@@ -68,6 +60,9 @@ export default function TogglePlots({
                   x: X,
                   y: y,
                   type: "bar",
+                  marker: {
+                    color: colors.blue_600,
+                  },
                 },
               ]}
               layout={{
