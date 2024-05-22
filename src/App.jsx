@@ -21,8 +21,8 @@ function App() {
       </Header>
 
       <PlotContainer className="plot-container">
-        <SAPlots />
         <TradePlots heading="Ireland Imports & Exports Map" />
+        <SAPlots />
         <TogglePlots
           path="/datasets/ireland_economy.csv"
           heading="Ireland Economic Statistics"
